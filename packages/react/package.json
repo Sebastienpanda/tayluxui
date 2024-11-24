@@ -1,6 +1,6 @@
 {
 	"name": "@tayluxui/react",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "",
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
@@ -38,7 +38,6 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@tayluxui/core": "workspace:*",
 		"@types/react": "^18.3.12",
 		"@types/react-dom": "^18.3.1",
 		"@vitejs/plugin-react": "^4.3.3",
@@ -46,4 +45,3 @@
 		"react-dom": "^18.3.1"
 	}
 }
-

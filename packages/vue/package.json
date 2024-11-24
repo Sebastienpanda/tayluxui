@@ -1,6 +1,6 @@
 {
 	"name": "@tayluxui/vue",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
 	"module": "./dist/taylux.es.js",
@@ -34,7 +34,6 @@
 		"clean": "rm -rf dist .turbo"
 	},
 	"dependencies": {
-		"@tayluxui/core": "workspace:*",
 		"vue": "^3.5.13"
 	},
 	"peerDependencies": {
@@ -45,4 +44,3 @@
 		"vue-tsc": "^2.1.10"
 	}
 }
-

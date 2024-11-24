@@ -25,14 +25,13 @@ export default defineConfig({
 			fileName: (format) => `taylux.${format}.js`,
 		},
 		rollupOptions: {
-			external: ['react', 'react-dom', '@tayluxui/core'],
+			external: ['react', 'react-dom'],
 			output: [
 				{
 					format: 'es',
 					exports: 'named',
 					globals: {
 						react: 'React',
-						'@tayluxui/core': 'TayluxCore',
 						'react-dom': 'ReactDOM',
 					},
 					assetFileNames: 'assets/[name][extname]',
@@ -43,7 +42,6 @@ export default defineConfig({
 					exports: 'named',
 					globals: {
 						react: 'React',
-						'@tayluxui/core': 'TayluxCore',
 						'react-dom': 'ReactDOM',
 					},
 					assetFileNames: 'assets/[name][extname]',

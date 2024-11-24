@@ -1,5 +1,5 @@
-import '@tayluxui/core/dist/index.css';
 import type { App } from 'vue';
+import '../../core/src/styles/index.scss';
 import Button from './components/Button/Button.vue';
 
 export { Button };
