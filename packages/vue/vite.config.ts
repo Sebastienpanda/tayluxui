@@ -29,14 +29,14 @@ export default defineConfig({
 		cssCodeSplit: false,
 		cssMinify: true,
 		rollupOptions: {
-			external: ['vue', '@taylux/core'],
+			external: ['vue', '@tayluxui/core'],
 			output: [
 				{
 					format: 'es',
 					exports: 'named',
 					globals: {
 						vue: 'Vue',
-						'@taylux/core': 'TayluxCore',
+						'@tayluxui/core': 'TayluxCore',
 					},
 					assetFileNames: 'assets/[name][extname]',
 					preserveModulesRoot: 'src',
@@ -47,7 +47,7 @@ export default defineConfig({
 					exports: 'named',
 					globals: {
 						vue: 'Vue',
-						'@taylux/core': 'TayluxCore',
+						'@tayluxui/core': 'TayluxCore',
 					},
 					assetFileNames: 'assets/[name][extname]',
 				},

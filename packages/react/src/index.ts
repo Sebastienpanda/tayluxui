@@ -1,2 +1,2 @@
-import '@taylux/core/dist/index.css';
+import '@tayluxui/core/dist/index.css';
 export { Button } from './components/Button/Button';

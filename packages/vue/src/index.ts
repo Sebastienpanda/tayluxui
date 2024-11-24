@@ -1,4 +1,4 @@
-import '@taylux/core/dist/index.css';
+import '@tayluxui/core/dist/index.css';
 import type { App } from 'vue';
 import Button from './components/Button/Button.vue';
 
