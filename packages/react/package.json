@@ -1,5 +1,5 @@
 {
-	"name": "@taylux/react",
+	"name": "@tayluxui/react",
 	"version": "0.0.1",
 	"description": "",
 	"type": "module",
@@ -46,3 +46,4 @@
 		"react-dom": "^18.3.1"
 	}
 }
+

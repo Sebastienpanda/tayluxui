@@ -1,5 +1,5 @@
 {
-	"name": "@taylux/vue",
+	"name": "@tayluxui/vue",
 	"version": "0.0.1",
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
