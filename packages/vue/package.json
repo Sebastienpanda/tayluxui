@@ -1,0 +1,48 @@
+{
+	"name": "@taylux/vue",
+	"version": "0.0.1",
+	"type": "module",
+	"main": "./dist/taylux.umd.js",
+	"module": "./dist/taylux.es.js",
+	"types": "./dist/types/ui/taylux.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/taylux.es.js",
+			"require": "./dist/taylux.umd.js",
+			"types": "./dist/types/ui/taylux.d.ts"
+		},
+		"./style.css": {
+			"import": "./dist/assets/style.css",
+			"require": "./dist/assets/style.css"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE.md"
+	],
+	"sideEffects": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite build --watch",
+		"lint": "eslint \"src/**/*.{ts,tsx,vue}\" --fix",
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit",
+		"clean": "rm -rf dist .turbo"
+	},
+	"dependencies": {
+		"@taylux/core": "workspace:*",
+		"vue": "^3.5.13"
+	},
+	"peerDependencies": {
+		"vue": "^3.5.13"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.2.0",
+		"vue-tsc": "^2.1.10"
+	}
+}
+
