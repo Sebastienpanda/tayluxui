@@ -14,6 +14,7 @@ export default defineConfig({
 				filePath: filePath.replace('../core/src/', ''),
 				content,
 			}),
+			rollupTypes: true,
 		}),
 	],
 	resolve: {
