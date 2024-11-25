@@ -1,5 +1,6 @@
 <script setup lang="ts">
-withDefaults(defineProps(), {
+import type { ButtonProps } from '../../../../core/src/types/Button/button';
+withDefaults(defineProps<ButtonProps>(), {
 	size: 'md',
 	variant: 'primary',
 	loading: false,

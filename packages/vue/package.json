@@ -1,15 +1,15 @@
 {
 	"name": "@tayluxui/vue",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
 	"module": "./dist/taylux.es.js",
-	"types": "./dist/types/ui/taylux.d.ts",
+	"types": "./dist/types/vue/src/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/taylux.es.js",
 			"require": "./dist/taylux.umd.js",
-			"types": "./dist/types/ui/taylux.d.ts"
+			"types": "./dist/types/vue/src/index.d.ts"
 		},
 		"./style.css": {
 			"import": "./dist/assets/style.css",

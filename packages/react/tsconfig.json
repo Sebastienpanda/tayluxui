@@ -1,12 +1,12 @@
 {
 	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"rootDir": "src",
-		"outDir": "dist",
-		"jsx": "react-jsx",
 		"composite": true,
-		"types": ["node", "react", "react-dom"]
+		"outDir": "./dist",
+		"baseUrl": ".",
+		"rootDir": "src",
+		"jsx": "react-jsx"
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx"],
-	"exclude": ["dist"]
+	"exclude": ["node_modules", "dist"]
 }
