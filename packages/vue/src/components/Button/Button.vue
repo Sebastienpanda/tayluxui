@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ButtonProps } from '../../../../core/src/types/Button/button';
+import type { ButtonProps } from '@/core/types/Button/button.js';
 withDefaults(defineProps<ButtonProps>(), {
 	size: 'md',
 	variant: 'primary',

@@ -1,24 +1,9 @@
 {
 	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"module": "ESNext",
-		"moduleResolution": "bundler",
-		"strict": true,
 		"jsx": "preserve",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"esModuleInterop": true,
-		"lib": ["ESNext", "DOM"],
-		"skipLibCheck": true,
-		"noEmit": true,
 		"baseUrl": "."
 	},
-	"references": [
-		{
-			"path": "./tsconfig.node.json"
-		}
-	],
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "../core/src/types/**/*.ts", "src/**/*.vue"]
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "../core/src/types/**/*.ts", "src/**/*.vue"],
+	"exclude": ["dist"]
 }

@@ -11,7 +11,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"declaration": true,
 		"declarationDir": "dist/types",
-		"sourceMap": true,
+		"sourceMap": false,
 		"isolatedModules": true,
 		"allowSyntheticDefaultImports": true,
 		"noUnusedLocals": true,
@@ -22,6 +22,7 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"strictBindCallApply": true,
+		"noEmit": true,
 		"paths": {
 			"@/core/*": ["../core/src/*"]
 		}

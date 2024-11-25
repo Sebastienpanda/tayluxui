@@ -21,7 +21,7 @@ export default defineConfig({
 		alias: [
 			{
 				find: '@/core',
-				replacement: resolve(__dirname, '../core/src/*'),
+				replacement: resolve(__dirname, '../core/src'),
 			},
 		],
 	},

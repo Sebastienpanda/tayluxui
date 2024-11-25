@@ -7,17 +7,24 @@ export default defineConfig({
 	plugins: [
 		react(),
 		dts({
-			include: ['src/**/*.ts', 'src/**/*.tsx'],
+			include: ['src/**/*.ts', 'src/index.ts', 'src/components/**/*.tsx', '../core/src/types/**/*.ts'],
 			outDir: 'dist/types',
 			cleanVueFileName: true,
-			beforeWriteFile: (filePath, content) => {
-				if (content.trim() === '') {
-					return false;
-				}
-				return { filePath, content };
-			},
+			beforeWriteFile: (filePath, content) => ({
+				filePath: filePath.replace('../core/src/', ''),
+				content,
+			}),
+			rollupTypes: true,
 		}),
 	],
+	resolve: {
+		alias: [
+			{
+				find: '@/core',
+				replacement: resolve(__dirname, '../core/src'),
+			},
+		],
+	},
 	build: {
 		lib: {
 			entry: resolve(__dirname, 'src/index.ts'),
